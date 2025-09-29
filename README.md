@@ -1,4 +1,4 @@
-# tsketches
+# Tsketches
 The offcial code of Tsketches. The Appendix of paper is provided in Paper_with_appendix.pdf.
 
 ## Setup
@@ -8,7 +8,7 @@ pip install -r requirements.txt
 The datasets are the top-8 longest time series datates from www.timeseriesclassification.com.
 Users can download the data after z-normlization and tsketches of all datasets from https://shorturl.at/a5PnP.
 
-Create data folder, including raw data folder and tsketches folder
+Create data folder, including raw data folder and tsketches folder:
 ```bash
 mkdir data
 mkdir data/raw
@@ -29,17 +29,17 @@ python main.py --dataset BinaryHeartbeat
 
 ## For other datasets and models
 
-Using tsketches to train a dataset with name "dataset_name"
+Using tsketches to train a dataset with name "dataset_name":
 ```bash
 python main.py  --dataset dataset_name
 ```
-Using tsketches to train a dataset with name "dataset_name" and model with name "model_name"
+Using tsketches to train a dataset with name "dataset_name" and model with name "model_name":
 ```bash
 python main.py  --dataset dataset_name  --model model_name
 ```
 
 ## Prototypes
-We have If you would like to obtain prototypes and tsketches by your own dataset.
+To obtain prototypes and tsketches by your own, run as follows:
 ```bash
 python autoencoder.py  --dataset dataset_name
 ```
