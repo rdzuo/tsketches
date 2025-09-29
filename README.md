@@ -6,7 +6,7 @@ The offcial code of Tsketches. The Appendix of paper is provided in Paper_with_a
 pip install -r requirements.txt
 ```
 The datasets are the top-8 longest time series datates from www.timeseriesclassification.com.
-Users can download the data after z-normlization and the extracted tsketches from https://shorturl.at/a5PnP.
+Users can download the data after z-normlization and tsketches of all datasets from https://shorturl.at/a5PnP.
 
 Create data folder
 ```bash
@@ -32,6 +32,12 @@ Using tsketches to train a dataset with name "dataset_name"
 python main.py  --dataset dataset_name
 ```
 Using tsketches to train a dataset with name "dataset_name" and model with name "model_name"
+
+## Prototypes
+We have If you would like to obtain prototypes and tsketches by your own dataset.
+```bash
+python autoencoder.py  --dataset dataset_name
+```
 
 ## Extend to other transformer
 
