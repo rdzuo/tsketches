@@ -34,11 +34,14 @@ Using tsketches to train a dataset with name "dataset_name"
 python main.py  --dataset dataset_name
 ```
 Using tsketches to train a dataset with name "dataset_name" and model with name "model_name"
+```bash
+python main.py  --dataset dataset_name  --model model_name
+```
 
 ## Prototypes
 We have If you would like to obtain prototypes and tsketches by your own dataset.
 ```bash
-python autoencoder.py  --dataset dataset_name --model model_name
+python autoencoder.py  --dataset dataset_name
 ```
 
 ## Extend to other transformer
