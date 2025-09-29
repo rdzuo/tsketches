@@ -8,15 +8,17 @@ pip install -r requirements.txt
 The datasets are the top-8 longest time series datates from www.timeseriesclassification.com.
 Users can download the data after z-normlization and tsketches of all datasets from https://shorturl.at/a5PnP.
 
-Create data folder
+Create data folder, including raw data folder and tsketches folder
 ```bash
 mkdir data
+mkdir data/raw
+mkdir data/tsketch
 ```
 Put a specific dataset (e.g., BinaryHeartbeat) as follows:
 
 ```bash
-mkdir data/raw/BinaryHeartbeat
-mkdir data/tsketch/BinaryHeartbeat
+data/raw/BinaryHeartbeat
+data/tsketch/BinaryHeartbeat
 ```
 
 ## Run an example
@@ -42,3 +44,6 @@ python autoencoder.py  --dataset dataset_name
 ## Extend to other transformer
 
 If you would like to use tsketches to train your own transformer models, put the codes of your model to models.py.
+
+## Acknowledgments
+Thanks for the research community for supporting the datasets, particularly grateful for the UCR/UEA TSC archive.
